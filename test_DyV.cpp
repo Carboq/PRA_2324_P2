@@ -6,7 +6,11 @@ using namespace std;
 #define Valor 5
 
 int main(){
-	vector<int> V = {0,1,2,3};
-	cout << "Valor encontrado: " << BusquedaBinaria(Valor,V,0,V.size()) << endl;
+	vector<int> V = {4,3,6,2,77,22,-3,4};
+	QuickSort(V,0,V.size()-1);
+	for (int i = 0; i < V.size(); i++){
+		cout << V[i] << " ";
+	}
+	cout << endl;
 	return 0;
 }
